@@ -4,13 +4,13 @@
 
 [Heroku](https://bashar-api-server.herokuapp.com/)\
 [GitHub Actions](https://github.com/BasharNofal/api-server/actions)\
-[Pull Request](https://github.com/BasharNofal/api-server/pull/3)
+[Pull Request](https://github.com/BasharNofal/api-server/pull/4)
 
 <hr>
 
 ### UML Diagram
 
-![UML](./assets/basic-api-server-UML.png)
+![UML](./assets/api-server.png)
 
 <hr>
 
