@@ -1,0 +1,153 @@
+{
+    "swagger" : "2.0",
+    "info" : {
+      "description" : "defaultDescription",
+      "version" : "0.1",
+      "title" : "defaultTitle"
+    },
+    "paths" : {
+      "/api/v2/clothes" : {
+        "get" : {
+          "produces" : [ "application/json" ],
+          "parameters" : [ ],
+          "responses" : {
+            "200" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model2"
+              }
+            }
+          }
+        },
+        "post" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "in" : "body",
+            "name" : "body",
+            "required" : false,
+            "schema" : {
+              "$ref" : "#/definitions/Model0"
+            },
+            "x-examples" : {
+              "application/json" : "{\n    \"name\":\"test\",\n    \"type\":\"testtest\"\n}"
+            }
+          } ],
+          "responses" : {
+            "201" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model3"
+              }
+            }
+          }
+        }
+      },
+      "/api/v2/foods" : {
+        "post" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "in" : "body",
+            "name" : "body",
+            "required" : false,
+            "schema" : {
+              "$ref" : "#/definitions/Model1"
+            },
+            "x-examples" : {
+              "application/json" : "{\n    \"name\":\"test\",\n    \"quantity\":1\n}"
+            }
+          } ],
+          "responses" : {
+            "201" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model4"
+              }
+            }
+          }
+        }
+      }
+    },
+    "definitions" : {
+      "Model0" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Model1" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "quantity" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Array" : {
+        "properties" : {
+          "_id" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          },
+          "__v" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Model2" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "#/definitions/Array"
+        }
+      },
+      "Model3" : {
+        "properties" : {
+          "_id" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          },
+          "__v" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Model4" : {
+        "properties" : {
+          "_id" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "quantity" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "__v" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      }
+    }
+  }
