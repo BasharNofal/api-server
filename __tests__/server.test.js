@@ -6,9 +6,6 @@ const superGoose = require('@code-fellows/supergoose');
 const superTest = require('supertest');
 // jest.setTimeout(1000);
 
-
-
-
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
@@ -85,7 +82,6 @@ describe('===============FOODS API TEST===============', () => {
         const response = await request.get(`/api/v2/foods/${id}`);
         expect(response.status).toEqual(200);
         expect(response.body.name).toEqual('test');
-        done();
     });
 
     it('should be able to get a food on DELETE /foods/:id', async () => {
