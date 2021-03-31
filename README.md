@@ -4,7 +4,7 @@
 
 [Heroku](https://bashar-api-server.herokuapp.com/)\
 [GitHub Actions](https://github.com/BasharNofal/api-server/actions)\
-[Pull Request](https://github.com/BasharNofal/api-server/pull/1)
+[Pull Request](https://github.com/BasharNofal/api-server/pull/3)
 
 <hr>
 
